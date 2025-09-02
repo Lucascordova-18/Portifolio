@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins sans-serif;
 }
 
 body {
@@ -12,4 +13,14 @@ body {
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
