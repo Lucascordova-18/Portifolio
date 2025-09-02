@@ -7,62 +7,70 @@
 
 body {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
-.flex{
+.flex {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-h2.titulo{
+/* TÍTULOS */
+h2.titulo {
     color: white;
-    font-size: 38px;
+    font-size: 2.3rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #d32f2f;
 }
 
+/* HEADER */
 header {
-    padding: 40px 4%;
+    padding: 20px 4%;
 }
 
 header > .interface {
-    align-items: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header a {
     color: rgb(105, 105, 105);
     text-decoration: none;
-    display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: white;
     transform: scale(1.05);
 }
 
-header nav ul{
-    list-style-type:  none;
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
-    padding: 0 40px;
 }
 
-.btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
+.btn-contato button {
+    padding: 10px 25px;
+    font-size: 16px;
     font-weight: 600;
     background-color: #d32f2f;
     border: 0;
@@ -71,134 +79,182 @@ header nav ul li{
     transition: .2s;
 }
 
-.btn-contato button:hover{
+.btn-contato button:hover {
     box-shadow: 0px 0px 8px rgb(199, 0, 0);
     transform: scale(1.05);
 }
 
-section.topo-do-site{
-    padding: 40px 4%;
+/* TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 0;
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
-    justify-content: center;
-    gap: 90px;
+    justify-content: space-between;
+    gap: 40px;
+    display: flex;
 }
 
-.topo-do-site h1{
+
+.topo-do-site h1 {
     color: white;
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 2.2rem;
+    line-height: 1.2;
 }
 
-.topo-do-site .txt-topo-site h1 span{
-    color: #d32f2f;    
+.topo-do-site .txt-topo-site h1 span {
+    color: #d32f2f;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: white;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
-.topo-do-site .img-topo-site img{
-    position: relative;
+.topo-do-site .img-topo-site img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes flutuar{
-    0%{ top: 0; }
-    100%{ top: 25px; }
+@keyframes flutuar {
+    0% { top: 0; }
+    100% { top: 25px; }
 }
 
-section.especialidades{
-    padding: 40px 4%;
+/* ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 0;
 }
 
-section.especialidades .flex{
-    gap: 60px;
+section.especialidades .flex {
+    gap: 40px;
+    justify-content: center;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: white;
-    padding: 40px;
-    margin-top: 45px;
+    padding: 30px;
     border-radius: 20px;
     transition: .2s;
+    text-align: center;
+    flex: 1 1 250px;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px white;
 }
 
-.especialidades .especialidades-box svg{
-    font-size: 70px;
+.especialidades .especialidades-box svg {
+    font-size: 60px;
     color: #d32f2f;
 }
 
-.especialidades .especialidades-box h3{
-    font-size: 28px;
-    margin: 15px ;
+.especialidades .especialidades-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
 }
 
-section.sobre{
-    padding: 40px 4%;
-}
-
-section.sobre .flex{
-    align-items: center;
-    gap: 600px;
-}
-
-.sobre .txt-sobre{
-    color: white;
-}
-
-.sobre .txt-sobre h2{
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
-}
-
-.sobre .txt-sobre h2 span{
-    color: #d32f2f;
-    display: block;
-}
-
-.sobre .txt-sobre p{
-    margin: 200px 0;
-    text-align: justify;
-    margin: 10px 0; /* espaço equilibrado entre parágrafos */
-    line-height: 1.6;
-}
-
-.sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #d32f2f;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
+/* SOBRE */
+section.sobre {
+    padding: 40px 0;
 }
 
 section.sobre .flex {
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;   /* espaço entre a imagem e o texto */
-    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .img-sobre img {
-    max-width: 400px;
+    max-width: 350px;
+    width: 100%;
     border-radius: 20px;
 }
 
 .txt-sobre {
     max-width: 600px;
+    color: white;
 }
 
+.txt-sobre h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
 
+.txt-sobre h2 span {
+    color: #d32f2f;
+    display: block;
+}
+
+.txt-sobre p {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.txt-sobre .btn-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d32f2f;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    h2.titulo {
+        font-size: 2rem;
+    }
+
+    .topo-do-site h1 {
+        font-size: 2rem;
+    }
+
+    .txt-sobre h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        gap: 15px;
+    }
+
+    section.topo-do-site .flex,
+    section.sobre .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .txt-sobre {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h2.titulo {
+        font-size: 1.5rem;
+    }
+
+    .topo-do-site h1 {
+        font-size: 1.6rem;
+    }
+
+    .txt-sobre h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn-contato button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
