@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    
     <header id="header">
         <div class="interface">
             <div class="logo">
@@ -33,7 +33,7 @@
         </div>
     </header>
 
-    <!-- HERO -->
+    
     <section id="inicio" class="topo-do-site">
         <div class="overlay"></div>
         <div class="interface">
@@ -52,7 +52,7 @@
         </div>
     </section>
 
-    <!-- ESPECIALIDADES -->
+    
     <section id="especialidades" class="especialidades">
         <div class="interface">
             <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <!-- SOBRE -->
+    
     <section id="sobre" class="sobre">
         <div class="interface">
             <div class="flex">
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <!-- PROJETOS -->
+    
     <section id="projetos" class="projetos">
         <div class="interface">
             <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
@@ -102,13 +102,13 @@
         </div>
     </section>
 
-    <!-- BOTÃO TOPO -->
+    
     <button id="btnTopo">⬆</button>
 
-    <!-- JS -->
+    
     <script src="https://kit.fontawesome.com/4a2e3f8e04.js" crossorigin="anonymous"></script>
     <script>
-    // Digitação animada
+    
     const text = "Futuro Desenvolvedor Back-end | Aprendendo, praticando e evoluindo";
     const typingElement = document.querySelector(".txt-topo-site h1");
     typingElement.textContent = "";
@@ -122,7 +122,7 @@
     }
     typeWriter();
 
-    // Menu ativo
+    
     document.addEventListener("scroll", () => {
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll("header nav ul li a");
@@ -142,7 +142,7 @@
         });
     });
 
-    // Header transparente ao rolar
+    
     const header = document.getElementById("header");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
@@ -152,7 +152,7 @@
         }
     });
 
-    // Botão topo
+    
     const btnTopo = document.getElementById("btnTopo");
     window.addEventListener("scroll", () => {
         btnTopo.style.display = window.scrollY > 200 ? "block" : "none";

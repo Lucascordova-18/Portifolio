@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
 }
 
-/* HEADER */
+
 header {
     position: fixed;
     top: 0;
@@ -66,7 +66,7 @@ header nav ul li a:hover {
     color: #d32f2f;
 }
 
-/* Botão */
+
 .btn-contato button {
     padding: 10px 25px;
     font-size: 15px;
@@ -83,7 +83,7 @@ header nav ul li a:hover {
     box-shadow: 0 0 15px #d32f2f;
 }
 
-/* HERO */
+
 .topo-do-site {
     position: relative;
     height: 100vh;
@@ -121,7 +121,7 @@ header nav ul li a:hover {
     box-shadow: 0 0 20px #d32f2f55;
 }
 
-/* ESPECIALIDADES */
+
 .especialidades {
     padding: 80px 0;
     text-align: center;
@@ -147,7 +147,7 @@ header nav ul li a:hover {
     color: #d32f2f;
 }
 
-/* SOBRE */
+
 .sobre {
     padding: 80px 0;
 }
@@ -173,7 +173,7 @@ header nav ul li a:hover {
     transform: scale(1.2);
 }
 
-/* BOTÃO TOPO */
+
 #btnTopo {
     position: fixed;
     bottom: 20px;
@@ -193,7 +193,7 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 768px) {
     .topo-do-site {
         text-align: center;
